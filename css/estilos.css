@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
 }
+/* comienzo index */
 body{
     background-image: linear-gradient(to bottom, #6413a7, #671ea6, #6a26a4, #6d2ea3, #7035a1, #723ba0, #75419e, #77479d, #794e9c, #7c559a, #7e5c99, #806397);
 }
@@ -13,6 +14,7 @@ body{
 .navbar{
    background-color:  #6a26a4 !important;
     height:150px;
+    z-index: 10;
 }
 .jumbotron{
     background-image: url(../img/ojos.jpg);
@@ -84,9 +86,15 @@ hr{
     margin: 0px;
     background-color: rgb(154, 63, 228);
 }
+/* fin index */
+/* inicio  seccion contacto */
 form{
     height:800px;
+    
    
+}
+.field{
+    width: 400px !important;
 }
 .formulario1 {
     display: flex;
@@ -97,5 +105,46 @@ form{
     padding: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    margin-left: -120px;
+    margin-top:-40px;
    
 }
+.fab{
+    font-size: 30px !important;
+    display:flex !important;
+}
+
+footer div{
+    width: 20px !important;
+    margin-top:-110px;
+}
+.logoC{
+    font-size: 30px !important;
+    height: 500px !important;
+    width: 500px !important;
+    margin-left:50px !important;
+}
+.redes{
+    font-size: 30px !important;
+    height: 50px !important;
+}
+h3{
+    font-family: 'Pushster', cursive;
+    margin-left: 60px !important;
+    margin-top: -35px !important;
+    color: white !important;
+}
+.container{
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.principalC{
+    display: grid;
+    grid-template-columns: 100% !important;
+}
+/* fin  seccion contacto */
+
+/* comienzo seccion ubicacion */
+
+
