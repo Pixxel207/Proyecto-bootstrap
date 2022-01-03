@@ -26,7 +26,9 @@ header{
     background-color: #fff !important;
 }
 main{
-    grid-area:main
+    grid-area:main;
+    height:1200px;
+    
 }
 /* comienzo footer */
 footer{
@@ -93,10 +95,15 @@ min-width:100% !important;
 }
 
 .navbar {
-    background-color: #ffffff !important;
+    background-color: rgb(255, 255, 255) !important;
     height: 150px;
     z-index: 10;
 }
+.navbar-toggler{
+    color: #000;
+    background-color:#333;
+}
+
 .logo{
     height: 150px;
 }
@@ -129,7 +136,9 @@ h2 {
     font-size:20px;
     padding: 30px;
     text-align: justify;
-    color: white;
+    color: rgb(0, 0, 0);
+    display:flex;
+    flex-direction: column;
 }
 
 .btn {
@@ -138,6 +147,7 @@ h2 {
 
 .n-left {
     height: 500px;
+    width: 50% !important;
     background-color: rgb(100, 19, 167);
 }
 
@@ -149,19 +159,23 @@ h2 {
 
 .n-right {
     height: 500px;
+    width: 50%;
     background-color: #333;
     padding: 0;
+    display: flex;
 }
-.text-center{
-    text-align: center !important;
-    font-family: 'Bebas Neue', cursive !important;
-    font-size:60px;
-    margin-top: 35px;
-}
+
 .container-fluid{
     display:grid;
-    grid-template-columns: 100%;
+    grid-template-columns:400px 400px;
     min-width: 100% !important;
+}
+.Container-foto{
+    height:200px;
+    width:500px;
+    display:flex;
+    justify-content:flex-end;
+    align-self: flex-end;
 }
 
 .n-right img {
@@ -185,9 +199,63 @@ h2 {
     background-position: center;
 }
 
-hr {
+.containerIndex{
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    height: 590px;
+}
+.container-left{
+    width:50%;
+    height: 500px;
+    display:flex;
+    flex-direction: column;
+
+}
+.text-center{
+    text-align: center !important;
+    font-family: 'Bebas Neue', cursive !important;
+    font-size:60px;
     margin: 0px;
-    background-color: rgb(154, 63, 228);
+
+}
+.h4{
+    background-color:rgb(187, 89, 252) !important;
+    color: #fff;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    font-size: 20px;
+    margin: 0px !important;
+    display:flex !important;
+    justify-content: center !important;
+    
+}
+.container-right{
+    width:50% ;
+    height:450px;
+    display: flex !important;
+    flex-direction:column !important;
+    justify-content: flex-start;
+ 
+}
+.container-right-foto{
+    margin-top:50px;
+    height: 428px;
+    width:700px;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start !important;
+
+}
+.h4right{
+    background-color:rgb(187, 89, 252) !important;
+    color: #fff;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    font-size: 20px;
+    margin: 0px !important;
+    display:flex !important;
+    justify-content: center !important;
 }
 
 /* fin index */
@@ -196,7 +264,11 @@ hr {
 
 /* inicio seccion servicios */
 
-
+.principalS{
+    height: 2035px;
+    min-width: 100%;
+    grid-area: main;
+}
 .jumbotron {
     background-image: url(../img/Foto1\ servicios.jpeg);
     background-size: cover;
@@ -217,6 +289,12 @@ hr {
     font-size: 25px;
     text-shadow: 0 0 5px #222;
 }
+.btn{
+    width:200px;
+    height:50px;
+}
+
+
 
 
 /* fin seccion servicios */
@@ -297,8 +375,13 @@ h3 {
 .principalC {
     display: grid;
     grid-template-columns: 100% !important;
+    height:1400px;
 }
 
 /* fin  seccion contacto */
 
 /* comienzo seccion ubicacion */
+
+.principalU{
+    height:880px;
+}
