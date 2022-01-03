@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 * {
     margin: 0;
@@ -9,19 +10,95 @@
 
 /* comienzo index */
 body {
-    background-image: linear-gradient(to bottom, #6413a7, #671ea6, #6a26a4, #6d2ea3, #7035a1, #723ba0, #75419e, #77479d, #794e9c, #7c559a, #7e5c99, #806397);
+    /* background-image: linear-gradient(to bottom, #6413a7, #671ea6, #6a26a4, #6d2ea3, #7035a1, #723ba0, #75419e, #77479d, #794e9c, #7c559a, #7e5c99, #806397); */
     display: grid;
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer" ;
     min-width: 100% !important;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff !important;
+}
+header{
+    grid-area:header;
+    background-color: #fff !important;
+}
+main{
+    grid-area:main
+}
+/* comienzo footer */
+footer{
+    display:grid;
+    grid-area:footer;
+    height: 200px;
+    background-color: rgb(203, 180, 223);
+    grid-template-columns: 1fr ;
+    grid-template-rows: 100px 100xpx;
+    min-width: 100%
+}
+.foooter{
+    height: 200px;
+    min-width: 100%;
+    align-items: center !important;
+    display: flex;
+    flex-direction: column !important;
+    justify-content:center !important;
+    align-self: center !important;
+    
+    
+}
+.logoFooter{
+    height: 90px;
+    align-items: center !important;
+    justify-content:center !important;
+    display: flex !important;
+    align-self: center !important;
+    margin-top:5px !important;
+
+}
+.sociales{
+    display: flex !important;
+    flex-direction: row !important;
+    margin: 10px !important;
+    
+}
+.redesF{
+    height: 35px;
+    display:flex;
+    flex-direction: row !important;
+    margin: 3px !important;
+}
+.footer-pie{
+background-color:black !important;
+font-family: 'Source Sans Pro', sans-serif;
+color: #fff;
+height: 45px !important;
+min-width:100% !important;
+
+
+}
+.footer-pie p{
+    margin-left: 5px;
+    height:45px !important;
+    text-align: center !important;
 }
 
+
+
+/* fin footer */
 .navbar-brand img {
     height: 120px;
 }
 
 .navbar {
-    background-color: #6a26a4 !important;
+    background-color: #ffffff !important;
     height: 150px;
     z-index: 10;
+}
+.logo{
+    height: 150px;
 }
 h1{
     font-family: 'Bebas Neue', cursive !important;
@@ -42,9 +119,9 @@ h2 {
     min-width: 100%;
 }
 .img-responsive{
-    height:500px;
+    height:700px;
     align-items: center;
-    max-width:100% !important;
+    min-width:100% !important;
 }
 
 .letra {
@@ -84,6 +161,7 @@ h2 {
 .container-fluid{
     display:grid;
     grid-template-columns: 100%;
+    min-width: 100% !important;
 }
 
 .n-right img {
@@ -120,7 +198,7 @@ hr {
 
 
 .jumbotron {
-    background-image: url(../img/ojos.jpg);
+    background-image: url(../img/Foto1\ servicios.jpeg);
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -172,10 +250,10 @@ form {
     display: flex !important;
 }
 
-footer div {
+/* footer div {
     width: 20px !important;
     margin-top: -110px;
-}
+} */
 
 .logoC {
     font-size: 30px !important;
@@ -210,7 +288,7 @@ h3 {
 .container-fluid{
     padding-left: 0;
     padding-right: 0;
-    min: width 100%; 
+    min-width:100%;
     display:flex;
     align-items: center !important;
     justify-content: center !important;
