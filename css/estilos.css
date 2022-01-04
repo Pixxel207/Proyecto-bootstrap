@@ -97,11 +97,16 @@ min-width:100% !important;
     grid-template-columns:400px 400px;
     min-width: 100% !important;
 }
+.row{
+    min-width:100%;
+    margin: 0;
+}
 .index-fluid{
     min-width: 50% !important;
     display:flex;
     flex-direction:column;
     align-self: center;
+    padding: 0;
     
 }
 h5{
@@ -123,7 +128,7 @@ h5{
 .imagen1{
     margin-top:0px !important;
     height: 400px ;
-    width: 500px;
+    width: 100%;
     align-items: center;
     align-self: center;
 }
