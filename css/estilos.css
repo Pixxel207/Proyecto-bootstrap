@@ -27,6 +27,8 @@ header{
     
 }
 main{
+    display: flex;
+    flex-direction: column;
     grid-area:main;
     height:100%;
     min-width: 100% !important;
@@ -293,12 +295,12 @@ h2 {
 
 /* fin index */
 
-/* inicio seccion servicios */
+
 
 /* inicio seccion servicios */
 
 .principalS{
-    height: 2035px;
+    height: 100%;
     min-width: 100%;
     grid-area: main;
 }
@@ -326,6 +328,36 @@ h2 {
     width:200px;
     height:50px;
 }
+.container-servicios{
+     align-items: center ;
+    display: flex ;
+    flex-direction:column;
+    width: 100%;
+    
+}
+.container2-servicios{
+    height: 500px;
+    width:500px;
+    display: flex;
+}
+.titulo-servicios{
+    text-align: center;
+    display: flex !important;
+    background-color:rgb(143, 43, 201);
+    color: #fff;
+    margin: 30px;
+    font-size:50px;
+    
+}
+.parrafo-servicios{
+    font-size:22px;
+    align-items: center;
+    text-align:center;
+}
+.section-sevicios{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -333,6 +365,9 @@ h2 {
 /* fin seccion servicios */
 
 /* inicio  seccion contacto */
+.bg-dark{
+    margin-bottom:20px;
+}
 form {
     height: 800px;
 
@@ -348,11 +383,11 @@ form {
     justify-content: center !important;
     text-align: justify !important;
     margin: 50px auto 50px auto;
-    width: 1800px;
+    min-width: 100%;
     padding: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    margin-top:-50px !important;
+    /* margin-top:-50px !important; */
     
 }
 
@@ -361,15 +396,12 @@ form {
     display: flex !important;
 }
 
-/* footer div {
-    width: 20px !important;
-    margin-top: -110px;
-} */
 
 .logoC {
     font-size: 30px !important;
-    height: 500px !important;
-    width: 500px !important;
+     height: 400px; 
+    min-width: 100%;
+  
    display:flex;
    align-items: center !important;
    justify-content: center !important;
@@ -405,16 +437,12 @@ h3 {
     justify-content: center !important;
 }
 
-.principalC {
-    display: grid;
-    grid-template-columns: 100% !important;
-    height:1400px;
-}
 
 /* fin  seccion contacto */
 
 /* comienzo seccion ubicacion */
 
-.principalU{
-    height:880px;
-}
+
+
+
+/* fin seccion ubicacion */
