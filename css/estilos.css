@@ -143,17 +143,21 @@ h5{
     min-width: 100% !important;
     z-index: 10;
 }
+.navbar-light .navbar-toggler{
+    border-color:#fff;
+}
 .navbar-brand img {
     height: 120px;
 }
 .navbar-toggler{
     color: #000;
-    background-color:#333;
+    background-color:#fff;
 }
 
 .logo{
     height: 150px;
 }
+/* fin navbar */
 h1{
     font-family: 'Bebas Neue', cursive !important;
 }
@@ -362,8 +366,8 @@ h2 {
 .row{
     justify-content:center;
 }
-.col-12{
-    flex: 0 0 58.333333%;
+.col-xs-12{
+    
     max-width: 58.333333%;
 }
 .parrafo-servicios{
@@ -390,6 +394,7 @@ h2 {
 }
 form {
     height: 800px;
+    width: 100% !important;
 
 
 }
@@ -412,7 +417,7 @@ form {
     font-size: 20px;
     /* margin-top:-50px !important; */
     
-}
+} 
 
 .fab {
     font-size: 30px !important;
@@ -459,7 +464,12 @@ h3 {
     align-items: center !important;
     justify-content: center !important;
 }
-.container-contacto{
+.container-contacto2{
+    min-width: 100%;
+    display: flex
+    
+}
+.container-contacto .img-fluid{
     width: 100%;
 }
 
@@ -469,7 +479,21 @@ h3 {
 
 /* comienzo seccion ubicacion */
 
-
+.container-ubicacion{
+     width: 100%;
+     
+}
+.container-ubicacion iframe{
+    width: 100%;
+    height:500px;
+    padding:40px 40px 40px 40px;
+}
+.iframe{
+    width: 1400px;
+    padding:20px 20px 20px 20px;
+   
+    align-items: center;
+}
 
 
 /* fin seccion ubicacion */
