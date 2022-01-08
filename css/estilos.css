@@ -3,6 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+
+
+/* font-family: 'Vujahday Script', cursive; */
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -27,9 +36,9 @@ header{
     
 }
 main{
+    grid-area:main;
     display: flex;
     flex-direction: column;
-    grid-area:main;
     height:100%;
     min-width: 100% !important;
     
@@ -342,6 +351,10 @@ h2 {
     width:200px;
     height:50px;
 }
+.btn-cita{
+    text-align:center;
+    width: 25%;
+}
 .container-servicios{
     align-items: center ;
     align-self: center;
@@ -383,10 +396,69 @@ h2 {
     flex-direction: column;
 }
 
+/*INICIO solicitar cita--otra seccion en la seccion sevicios */
+/*INICIO solicitar cita--otra seccion en la seccion sevicios */
+
+.solicitar{
+    background-image: url(.././img/container-solicitar.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    min-width: 100% !important;
+}
+.container-solicitar{
+   display: flex;
+   flex-direction: column;
+ 
+
+}
+.form2{
+    height:100%;
+    margin-left: 10px;
+    color: #fff;
+}
+.form2 select{
+    margin-top: 10px;
+}
+.center-content{
+    margin-top: 10px;
+}
+
+.container-solicitar .titulo-solicitar{
+    font-family: 'Vujahday Script', cursive !important;
+    font-size:50px;
+    color: #fff;
+    font-weight:1000 !important;
+}
+.subtitulo-solicitar{
+    font-family: 'Vujahday Script', cursive !important;
+    font-size:35px;
+    color: #fff;
+    font-weight:1000 !important;
+}
+.form2 .center-content .btn{
+    color: #fff;
+
+}
+
+
+
+
+
+
+
+
+/*FIN solicitar cita--otra seccion en la seccion sevicios */
+/*FIN solicitar cita--otra seccion en la seccion sevicios */
 
 
 
 /* fin seccion servicios */
+
+
 
 /* inicio  seccion contacto */
 .bg-dark{
@@ -488,7 +560,6 @@ h3 {
     height:500px;
     padding:40px 40px 40px 40px;
 }
-
 
 
 /* fin seccion ubicacion */
