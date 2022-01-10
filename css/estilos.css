@@ -417,7 +417,7 @@ h2 {
 }
 .form2{
     height:100%;
-    width: 100%;
+    width: 80% !important;
     margin-left: 10px;
     color: #fff;
 }
@@ -433,18 +433,20 @@ h2 {
     font-size:50px;
     color: #fff;
     font-weight:1000 !important;
+    margin-left: 10px;
 }
 .subtitulo-solicitar{
     font-family: 'Vujahday Script', cursive !important;
     font-size:35px;
     color: #fff;
     font-weight:1000 !important;
+    margin-left: 10px;
 }
 .form2 .center-content .btn{
     color: #fff;
 
 }
-.container-solicitarNuevo{
+.container-solcitarNuevo{
     max-width: 100%;
 }
 
@@ -472,7 +474,8 @@ form {
 }
 
 .field {
-    width: 400px !important;
+    width: 100% !important;
+    margin-right: -10px;
 }
 .form1{
     width:100%;
