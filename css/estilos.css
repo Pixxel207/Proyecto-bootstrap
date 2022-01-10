@@ -417,6 +417,7 @@ h2 {
 }
 .form2{
     height:100%;
+    width: 100%;
     margin-left: 10px;
     color: #fff;
 }
@@ -443,10 +444,9 @@ h2 {
     color: #fff;
 
 }
-
-
-
-
+.container-solicitarNuevo{
+    max-width: 100%;
+}
 
 
 
@@ -563,3 +563,33 @@ h3 {
 
 
 /* fin seccion ubicacion */
+
+
+
+
+
+/*inicio de las pseudoclases */
+.jumbotron a:active{
+    color:rgb(255, 0, 221);
+    font-size: 20px;
+    }
+    .form2 .center-content input:active{
+        color:rgb(255, 0, 221);
+        font-size: 20px;
+        }
+        .nav-link:active{
+            font-size:15px;
+        }
+    
+    
+    
+    
+    
+    
+    /*fin de las pseudoclases */
+    
+    
+    
+
+    
+    /* fin de la lista de estilos */
