@@ -43,7 +43,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  min-width: 100% !important;
+  min-width: 100%;
 }
 
 /* comienzo footer */
@@ -127,7 +127,7 @@ footer {
   font-family: 'Source Sans Pro', sans-serif;
   color: #fff;
   height: 45px !important;
-  min-width: 100% !important;
+  min-width: 100%;
 }
 
 .footer-pie p {
@@ -141,7 +141,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100% !important;
+  min-width: 100%;
 }
 
 .row {
@@ -202,7 +202,7 @@ h5 {
 .navbar {
   background-color: white !important;
   height: 150px;
-  min-width: 100% !important;
+  min-width: 100%;
   z-index: 10;
 }
 
@@ -255,7 +255,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 100% !important;
+  min-width: 100%;
 }
 
 .btn {
@@ -461,6 +461,7 @@ h2 {
 .btn {
   width: 200px;
   height: 50px;
+  margin-top: 5px !important;
 }
 
 .btn-cita {
@@ -548,7 +549,7 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  min-width: 100% !important;
+  min-width: 100%;
 }
 
 .container-solicitar {
@@ -610,11 +611,11 @@ h2 {
 
 form {
   height: 800px;
-  width: 100% !important;
+  width: 100%;
 }
 
 .field {
-  width: 100% !important;
+  width: 100%;
   margin-right: -10px;
 }
 
@@ -673,7 +674,7 @@ h3 {
 }
 
 .container {
-  height: 100% !important;
+  height: 100%;
   min-width: 100%;
   margin: 0 !important;
   padding: 0 !important;
