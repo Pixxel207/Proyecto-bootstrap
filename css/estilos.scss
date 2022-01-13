@@ -12,6 +12,23 @@
 
 
 
+// inicio variables
+
+
+$colorF:rgb(203, 180, 223);
+$alturaOanchoMaximo:100%;
+
+
+
+
+
+
+// fin variables
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -40,7 +57,7 @@ main{
     display: flex;
     flex-direction: column;
     height:100%;
-    min-width: 100% !important;
+    min-width:$alturaOanchoMaximo;
     
 }
 /* comienzo footer */
@@ -48,14 +65,14 @@ footer{
     display:grid;
     grid-area:footer;
     height: 200px;
-    background-color: rgb(203, 180, 223);
+    background-color: $colorF;
     grid-template-columns: 1fr ;
     grid-template-rows: 100px 100xpx;
-    min-width: 100%;
+    min-width:$alturaOanchoMaximo;
 }
 .foooter{
     height: 200px;
-    min-width: 100%;
+    min-width:$alturaOanchoMaximo;
     align-items: center !important;
     display: flex;
     flex-direction: column !important;
@@ -90,7 +107,7 @@ background-color:black !important;
 font-family: 'Source Sans Pro', sans-serif;
 color: #fff;
 height: 45px !important;
-min-width:100% !important;
+min-width:$alturaOanchoMaximo;
 p{
     margin-left: 5px;
     height:45px !important;
@@ -106,10 +123,10 @@ p{
 .container-fluid{
     display:flex;
     
-    min-width: 100% !important;
+    min-width:$alturaOanchoMaximo;
 }
 .row{
-    min-width:100%;
+    min-width:$alturaOanchoMaximo;
     margin: 0;
 }
 .index-fluid{
@@ -127,7 +144,7 @@ h5{
 }
 .letra {
     font-family: 'Montserrat', sans-serif;
-    height:100%;
+    height:$alturaminima;
     font-size:20px;
     padding: 30px;
     margin-bottom: 30px;
@@ -139,7 +156,7 @@ h5{
 .imagen1{
     margin-top:0px !important;
     height: 400px ;
-    width: 100%;
+    width:$alturaminima;
     align-items: center;
     align-self: center;
 }
@@ -149,7 +166,7 @@ h5{
 .navbar {
     background-color: rgb(255, 255, 255) !important;
     height: 150px;
-    min-width: 100% !important;
+    min-width: $alturaOanchoMaximo;
     z-index: 10;
 }
 .navbar-light .navbar-toggler{
@@ -183,12 +200,12 @@ h2 {
     display:flex;
     justify-content:center !important;
     align-items:center !important;
-    min-width: 100%;
+    min-width:$alturaOanchoMaximo;
 }
 .img-responsive{
     height:700px;
     align-items: center;
-    min-width:100% !important;
+    min-width:$alturaOanchoMaximo;
 }
 
 
@@ -218,8 +235,8 @@ h2 {
     img {
         background-size: cover;
         background-position: center;
-        width: 100%;
-        height: 100%;
+        width:$alturaOanchoMaximo;
+        height: $alturaOanchoMaximo;
         margin: 0;
     }
 }
@@ -234,11 +251,11 @@ h2 {
 }
 
 .carousel-index{
-    width: 100%;
+    width: $alturaOanchoMaximo;
 
 }
 .carousel-index .img-fluid{
-    width: 100%;
+    width: $alturaminima;
 }
 
 .carousel-inner {
@@ -249,7 +266,7 @@ h2 {
 .revenge {
     background-position: center;
     height: 700px;
-    width: 100%;
+    width: $alturaminima;
     background-size: cover;
     background-position: center;
 }
@@ -257,7 +274,7 @@ h2 {
 .containerIndex{
     display: flex;
     flex-direction: row;
-    min-width: 100%;
+    min-width: $alturaOanchoMaximo;
     height: 590px;
 }
 .container-left{
@@ -321,8 +338,8 @@ h2 {
 /* inicio seccion servicios */
 
 .principalS{
-    height: 100%;
-    min-width: 100%;
+    height: $alturaOanchoMaximo;
+    min-width: $alturaOanchoMaximo;
     grid-area: main;
     display:flex;
     flex-direction: column;
@@ -361,11 +378,11 @@ h2 {
     align-self: center;
     display: flex ;
     flex-direction:column;
-    width: 100%;
+    width:$alturaOanchoMaximo;
    
 }
 .container2-servicios{
-    height: 100%;
+    height: $alturaOanchoMaximo;
     display: flex;
 }
 .titulo-servicios{
@@ -407,8 +424,8 @@ h2 {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height:100%;
-    min-width: 100% !important;
+    height:$alturaOanchoMaximo;
+    min-width:$alturaOanchoMaximo;
 }
 .container-solicitar{
    display: flex;
@@ -417,7 +434,7 @@ h2 {
 
 }
 .form2{
-    height:100%;
+    height:$alturaOanchoMaximo;
     width: 80% !important;
     margin-left: 10px;
     color: #fff;
@@ -449,7 +466,7 @@ h2 {
 
 }
 .container-solcitarNuevo{
-    max-width: 100%;
+    max-width: $alturaOanchoMaximo;
 }
 
 
@@ -470,13 +487,13 @@ h2 {
 }
 form {
     height: 800px;
-    width: 100% !important;
+    width:$alturaOanchoMaximo;
 
 
 }
 
 .field {
-    width: 100% !important;
+    width:$alturaOanchoMaximo;
     margin-right: -10px;
 }
 .form1{
@@ -488,7 +505,7 @@ form {
     justify-content: center !important;
     text-align: justify !important;
     margin: 50px auto 50px auto;
-    min-width: 100%;
+    min-width: $alturaOanchoMaximo;
     padding: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -505,7 +522,7 @@ form {
 .logoC {
     font-size: 30px !important;
      height: 400px; 
-    min-width: 100%;
+    min-width:$alturaOanchoMaximo;
   
    display:flex;
    align-items: center !important;
@@ -525,8 +542,8 @@ h3 {
 }
 
 .container {
-    height: 100% !important;
-    min-width: 100%;
+    height: $alturaOanchoMaximo;
+    min-width: $alturaOanchoMaximo;
     margin: 0 !important;
     padding: 0 !important;
     display:flex;
@@ -536,18 +553,18 @@ h3 {
 .container-fluid{
     padding-left: 0;
     padding-right: 0;
-    min-width:100%;
+    min-width:$alturaOanchoMaximo;
     display:flex;
     align-items: center !important;
     justify-content: center !important;
 }
 .container-contacto2{
-    min-width: 100%;
+    min-width:$alturaOanchoMaximo;
     display: flex
     
 }
 .container-contacto .img-fluid{
-    width: 100%;
+    width: $alturaOanchoMaximo;
 }
 
 
@@ -557,10 +574,10 @@ h3 {
 /* comienzo seccion ubicacion */
 
 .container-ubicacion{
-     width: 100%;
+     width: $alturaOanchoMaximo;
      
      iframe{
-        width: 100%;
+        width:$alturaOanchoMaximo;
         height:500px;
         padding:40px 40px 40px 40px;
     }
