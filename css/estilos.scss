@@ -130,7 +130,7 @@ p{
     margin: 0;
 }
 .index-fluid{
-    min-width: 50% !important;
+    min-width: 100% !important;
     display:flex;
     flex-direction:column;
     align-self: center;
@@ -386,6 +386,7 @@ h2 {
 .container2-servicios{
     height: $alturaOanchoMaximo;
     display: flex;
+    width:$alturaOanchoMaximo;
 }
 .titulo-servicios{
     text-align: center;

@@ -150,7 +150,7 @@ footer {
 }
 
 .index-fluid {
-  min-width: 50% !important;
+  min-width: 100% !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,6 +490,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .titulo-servicios {
