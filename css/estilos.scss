@@ -4,12 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
-
-
-/* font-family: 'Vujahday Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
 
 
 
+//  font-family: 'Vujahday Script', cursive;
+// font-family: 'Vujahday Script', cursive;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 
 // inicio variables
@@ -17,6 +23,7 @@
 
 $colorF:rgb(203, 180, 223);
 $alturaOanchoMaximo:100%;
+$letra:'Vujahday Script', 110px;
 
 
 
@@ -29,10 +36,7 @@ $alturaOanchoMaximo:100%;
 
 
 
-* {
-    margin: 0;
-    padding: 0;
-}
+
 
 /* comienzo index */
 body {
@@ -130,14 +134,14 @@ p{
     margin: 0;
 }
 .index-fluid{
-    min-width: 50% !important;
+    min-width: 100% !important;
     display:flex;
     flex-direction:column;
     align-self: center;
     padding: 0;
     
 }
-.index-fluid{
+.index-fluid2{
     min-width: 50% !important;
     display:flex;
     flex-direction:column;
@@ -151,7 +155,7 @@ h5{
     margin: 0;
 }
 .letra {
-    font-family: 'Montserrat', sans-serif;
+    font-family:$letra;
     height:$alturaOanchoMaximo;
     font-size:20px;
     padding: 30px;
@@ -381,7 +385,7 @@ h2 {
 
 .btn-cita{
     text-align:center;
-    width: 25%;
+    width: 40%;
 }
 .container-servicios{
     align-items: center ;
@@ -448,7 +452,7 @@ h2 {
     height:$alturaOanchoMaximo;
     width: 80% !important;
     margin-left: 10px;
-    color: #fff;
+    color: #000;
     select{
         margin-top: 10px;
     }
@@ -459,21 +463,21 @@ h2 {
 }
 
 .container-solicitar .titulo-solicitar{
-    font-family: 'Vujahday Script', cursive !important;
+    font-family: $letra;
+    color: #000;
     font-size:50px;
-    color: #fff;
     font-weight:1000 !important;
     margin-left: 10px;
 }
 .subtitulo-solicitar{
-    font-family: 'Vujahday Script', cursive !important;
+    font-family: $letra;
     font-size:35px;
-    color: #fff;
+    color: #000;
     font-weight:1000 !important;
     margin-left: 10px;
 }
 .form2 .center-content .btn{
-    color: #fff;
+    color: #000;
 
 }
 .container-solcitarNuevo{
@@ -622,6 +626,8 @@ h3 {
     
     
     /*fin de las pseudoclases */
+
+
     
     
 
