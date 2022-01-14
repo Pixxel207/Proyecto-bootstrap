@@ -130,7 +130,15 @@ p{
     margin: 0;
 }
 .index-fluid{
-    min-width: 100% !important;
+    min-width: 50% !important;
+    display:flex;
+    flex-direction:column;
+    align-self: center;
+    padding: 0;
+    
+}
+.index-fluid{
+    min-width: 50% !important;
     display:flex;
     flex-direction:column;
     align-self: center;

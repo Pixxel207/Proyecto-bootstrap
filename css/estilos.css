@@ -150,7 +150,21 @@ footer {
 }
 
 .index-fluid {
-  min-width: 100% !important;
+  min-width: 50% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 0;
+}
+
+.index-fluid {
+  min-width: 50% !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
