@@ -5,9 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
 
-
-
+// font-family: 'Vujahday Script', cursive;
 //  font-family: 'Vujahday Script', cursive;
 // font-family: 'Vujahday Script', cursive;
 
@@ -17,15 +17,62 @@
     padding: 0;
 }
 
+// inicio variables en sass
 
-// inicio variables
-
-
-$colorF:rgb(203, 180, 223);
+// fuentes
+$font:'courier New',
+Courier,
+monospace;
+$font2:arial;
+$width:100%;
+$height:100%;
 $alturaOanchoMaximo:100%;
-$letra:'Vujahday Script', 110px;
+$letra:'Vujahday Script',
+110px;
+$name:'Vujahday Script',
+cursive;
 
 
+// colores
+$bgcolor:#E7EEEA;
+$bgcolor1:violet;
+$colorF:rgb(203, 180, 223);
+
+
+// declaro mapa
+
+$formularios:(form: arial,
+    form1: cursive,
+    form2: 'courier new',
+    form3: sans-serif,
+    form4:serif,
+
+);
+
+
+
+// bucle del mapa
+@each $name,
+$font2 in $formularios {
+    .form--#{$name} {
+        font-family: $font2;
+        font-size: 25px;
+        color: #333;
+
+    }
+
+}
+
+
+@mixin size ($width, $height, $colorF) {
+    height: $height;
+    width: $width;
+    background-color: $colorF;
+
+}
+
+
+// el uso del extend esta en el class .solicitar
 
 
 
@@ -43,80 +90,89 @@ body {
     /* background-image: linear-gradient(to bottom, #6413a7, #671ea6, #6a26a4, #6d2ea3, #7035a1, #723ba0, #75419e, #77479d, #794e9c, #7c559a, #7e5c99, #806397); */
     display: grid;
     grid-template-areas:
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer" ;
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
     min-width: 100% !important;
     height: 100vh;
     width: 100vw;
     background-color: #fff !important;
 }
-header{
-    grid-area:header;
+
+header {
+    grid-area: header;
     background-color: #fff !important;
-    
+
 }
-main{
-    grid-area:main;
+
+main {
+    grid-area: main;
     display: flex;
     flex-direction: column;
-    height:100%;
-    min-width:$alturaOanchoMaximo;
-    
+    height: 100%;
+    min-width: $alturaOanchoMaximo;
+
 }
+
 /* comienzo footer */
-footer{
-    display:grid;
-    grid-area:footer;
+footer {
+    display: grid;
+    grid-area: footer;
     height: 200px;
     background-color: $colorF;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     grid-template-rows: 100px 100xpx;
-    min-width:$alturaOanchoMaximo;
+    min-width: $alturaOanchoMaximo;
 }
-.foooter{
+
+.foooter {
     height: 200px;
-    min-width:$alturaOanchoMaximo;
+    min-width: $alturaOanchoMaximo;
     align-items: center !important;
     display: flex;
     flex-direction: column !important;
-    justify-content:center !important;
+    justify-content: center !important;
     align-self: center !important;
-    
-    
-}
-.logoFooter{
-    height: 90px;
-    align-items: center !important;
-    justify-content:center !important;
-    display: flex !important;
-    align-self: center !important;
-    margin-top:5px !important;
+
 
 }
-.sociales{
+
+.logoFooter {
+    height: 90px;
+    align-items: center !important;
+    justify-content: center !important;
     display: flex !important;
-     flex-direction: row !important;
-     margin: 10px !important;
-    
+    align-self: center !important;
+    margin-top: 5px !important;
+
 }
-.redesF{
+
+.sociales {
+    display: flex !important;
+    flex-direction: row !important;
+    margin: 10px !important;
+
+}
+
+.redesF {
     height: 35px;
-    display:flex;
+    display: flex;
     flex-direction: row !important;
     margin: 3px !important;
 }
-.footer-pie{
-background-color:black !important;
-font-family: 'Source Sans Pro', sans-serif;
-color: #fff;
-height: 45px !important;
-min-width:$alturaOanchoMaximo;
-p{
-    margin-left: 5px;
-    height:45px !important;
-    text-align: center !important;
-}
+
+.footer-pie {
+    background-color: black !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    height: 45px !important;
+    min-width: $alturaOanchoMaximo;
+
+    p {
+        margin-left: 5px;
+        height: 45px !important;
+        text-align: center !important;
+    }
 
 
 }
@@ -124,54 +180,61 @@ p{
 
 
 /* fin footer */
-.container-fluid{
-    display:flex;
-    
-    min-width:$alturaOanchoMaximo;
+.container-fluid {
+    display: flex;
+
+    min-width: $alturaOanchoMaximo;
 }
-.row{
-    min-width:$alturaOanchoMaximo;
+
+.row {
+    min-width: $alturaOanchoMaximo;
     margin: 0;
 }
-.index-fluid{
+
+.index-fluid {
     min-width: 100% !important;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     align-self: center;
     padding: 0;
-    
+
 }
-.index-fluid2{
+
+.index-fluid2 {
     min-width: 50% !important;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     align-self: center;
     padding: 0;
-    
+
 }
-h5{
-    height:50px;
+
+h5 {
+    height: 50px;
     background-color: rgb(203, 180, 223);
     margin: 0;
 }
+
 .letra {
-    font-family:$letra;
-    height:$alturaOanchoMaximo;
-    font-size:20px;
+    font-family: $letra;
+    height: $alturaOanchoMaximo;
+    font-size: 20px;
     padding: 30px;
     margin-bottom: 30px;
     text-align: justify;
     color: rgb(0, 0, 0);
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
-.imagen1{
-    margin-top:0px !important;
-    height: 400px ;
-    width:$alturaOanchoMaximo;
+
+.imagen1 {
+    margin-top: 0px !important;
+    height: 400px;
+    width: $alturaOanchoMaximo;
     align-items: center;
     align-self: center;
 }
+
 /* inicio navbar */
 
 
@@ -181,22 +244,26 @@ h5{
     min-width: $alturaOanchoMaximo;
     z-index: 10;
 }
-.navbar-light .navbar-toggler{
-    border-color:#fff;
+
+.navbar-light .navbar-toggler {
+    border-color: #fff;
 }
+
 .navbar-brand img {
     height: 120px;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     color: #000;
-    background-color:#fff;
+    background-color: #fff;
 }
 
-.logo{
+.logo {
     height: 150px;
 }
+
 /* fin navbar */
-h1{
+h1 {
     font-family: 'Bebas Neue', cursive !important;
 }
 
@@ -208,16 +275,18 @@ h2 {
     padding: 15px;
     margin: 0;
 }
-.foto{
-    display:flex;
-    justify-content:center !important;
-    align-items:center !important;
-    min-width:$alturaOanchoMaximo;
+
+.foto {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    min-width: $alturaOanchoMaximo;
 }
-.img-responsive{
-    height:700px;
+
+.img-responsive {
+    height: 700px;
     align-items: center;
-    min-width:$alturaOanchoMaximo;
+    min-width: $alturaOanchoMaximo;
 }
 
 
@@ -230,11 +299,12 @@ h2 {
     height: 500px;
     width: 50% !important;
     background-color: rgb(100, 19, 167);
+
     h3 {
         color: black;
         text-transform: uppercase;
     }
-    
+
 }
 
 
@@ -244,29 +314,31 @@ h2 {
     background-color: #333;
     padding: 0;
     display: flex;
+
     img {
         background-size: cover;
         background-position: center;
-        width:$alturaOanchoMaximo;
+        width: $alturaOanchoMaximo;
         height: $alturaOanchoMaximo;
         margin: 0;
     }
 }
 
 
-.Container-foto{
-    height:200px;
-    width:500px;
-    display:flex;
-    justify-content:flex-end;
+.Container-foto {
+    height: 200px;
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
     align-self: flex-end;
 }
 
-.carousel-index{
+.carousel-index {
     width: $alturaOanchoMaximo;
 
 }
-.carousel-index .img-fluid{
+
+.carousel-index .img-fluid {
     width: $alturaOanchoMaximo;
 }
 
@@ -283,62 +355,68 @@ h2 {
     background-position: center;
 }
 
-.containerIndex{
+.containerIndex {
     display: flex;
     flex-direction: row;
     min-width: $alturaOanchoMaximo;
     height: 590px;
 }
-.container-left{
-    width:50%;
+
+.container-left {
+    width: 50%;
     height: 500px;
-    display:flex;
+    display: flex;
     flex-direction: column;
 
 }
-.text-center{
+
+.text-center {
     text-align: center !important;
     font-family: 'Bebas Neue', cursive !important;
-    font-size:60px;
+    font-size: 60px;
     margin: 0px;
 
 }
-.h4{
-    background-color:rgb(187, 89, 252) !important;
+
+.h4 {
+    background-color: rgb(187, 89, 252) !important;
     color: #fff;
     text-align: center !important;
     text-transform: uppercase !important;
     font-size: 20px;
     margin: 0px !important;
-    display:flex !important;
-    justify-content: center !important;
-    
-}
-.container-right{
-    width:50% ;
-    height:450px;
     display: flex !important;
-    flex-direction:column !important;
-    justify-content: flex-start;
- 
-}
-.container-right-foto{
-    margin-top:50px;
-    height: 428px;
-    width:700px;
-    display:flex;
-    flex-direction: column;
-    justify-content:flex-start !important;
+    justify-content: center !important;
 
 }
-.h4right{
-    background-color:rgb(187, 89, 252) !important;
+
+.container-right {
+    width: 50%;
+    height: 450px;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start;
+
+}
+
+.container-right-foto {
+    margin-top: 50px;
+    height: 428px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+
+}
+
+.h4right {
+    background-color: rgb(187, 89, 252) !important;
     color: #fff;
     text-align: center !important;
     text-transform: uppercase !important;
     font-size: 20px;
     margin: 0px !important;
-    display:flex !important;
+    display: flex !important;
     justify-content: center !important;
 }
 
@@ -349,13 +427,14 @@ h2 {
 
 /* inicio seccion servicios */
 
-.principalS{
+.principalS {
     height: $alturaOanchoMaximo;
     min-width: $alturaOanchoMaximo;
     grid-area: main;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
+
 .jumbotron {
     background-image: url(../img/jumbotron.jpeg);
     background-size: cover;
@@ -363,68 +442,77 @@ h2 {
     height: 400px;
     margin: 0;
     border-radius: 0;
+
     h1 {
         color: violet;
         text-shadow: 0 0 5px #222;
 
     }
+
     p {
         color: rgb(241, 241, 241);
         font-family: 'Pushster', cursive;
         font-size: 25px;
         text-shadow: 0 0 5px #222;
     }
-    
+
 }
 
-.btn{
-    width:200px;
-    height:50px;
+.btn {
+    width: 200px;
+    height: 50px;
     margin-top: 5px !important;
 }
 
-.btn-cita{
-    text-align:center;
+.btn-cita {
+    text-align: center;
     width: 40%;
 }
-.container-servicios{
-    align-items: center ;
+
+.container-servicios {
+    align-items: center;
     align-self: center;
-    display: flex ;
-    flex-direction:column;
-    width:$alturaOanchoMaximo;
-   
+    display: flex;
+    flex-direction: column;
+    width: $alturaOanchoMaximo;
+
 }
-.container2-servicios{
+
+.container2-servicios {
     height: $alturaOanchoMaximo;
     display: flex;
-    width:$alturaOanchoMaximo;
+    width: $alturaOanchoMaximo;
 }
-.titulo-servicios{
+
+.titulo-servicios {
     text-align: center;
     display: flex !important;
-    background-color:rgb(143, 43, 201);
+    background-color: rgb(143, 43, 201);
     color: #fff;
     margin: 30px;
-    font-size:50px;
-    
+    font-size: 50px;
+
 }
-.row{
-    justify-content:center;
+
+.row {
+    justify-content: center;
 }
-.col-xs-12{
-    
+
+.col-xs-12 {
+
     max-width: 58.333333%;
 }
-.parrafo-servicios{
-    font-size:22px;
+
+.parrafo-servicios {
+    font-size: 22px;
     align-items: center;
-    text-align:center;
+    text-align: center;
     width: 50%;
     padding-left: 20%;
     padding-right: 20%;
 }
-.section-sevicios{
+
+.section-sevicios {
     display: flex;
     flex-direction: column;
 }
@@ -432,55 +520,63 @@ h2 {
 /*INICIO solicitar cita--otra seccion en la seccion sevicios */
 /*INICIO solicitar cita--otra seccion en la seccion sevicios */
 
-.solicitar{
+.solicitar {
+    @extend .row;
     background-image: url(.././img/container-solicitar.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height:$alturaOanchoMaximo;
-    min-width:$alturaOanchoMaximo;
-}
-.container-solicitar{
-   display: flex;
-   flex-direction: column;
- 
+    height: $alturaOanchoMaximo;
+    min-width: $alturaOanchoMaximo;
 
 }
-.form2{
-    height:$alturaOanchoMaximo;
+
+.container-solicitar {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.form2 {
+    height: $alturaOanchoMaximo;
     width: 80% !important;
     margin-left: 10px;
     color: #000;
-    select{
+
+    select {
         margin-top: 10px;
     }
 }
 
-.center-content{
+.center-content {
     margin-top: 10px;
 }
 
-.container-solicitar .titulo-solicitar{
+.container-solicitar .titulo-solicitar {
     font-family: $letra;
     color: #000;
-    font-size:50px;
-    font-weight:1000 !important;
+    font-size: 50px;
+    font-weight: 1000 !important;
     margin-left: 10px;
 }
-.subtitulo-solicitar{
+
+.subtitulo-solicitar {
     font-family: $letra;
-    font-size:35px;
+    font-size: 35px;
     color: #000;
-    font-weight:1000 !important;
+    font-weight: 1000 !important;
     margin-left: 10px;
 }
-.form2 .center-content .btn{
+
+.form2 .center-content .btn {
     color: #000;
 
 }
-.container-solcitarNuevo{
+
+.container-solcitarNuevo {
     max-width: $alturaOanchoMaximo;
 }
 
@@ -497,22 +593,24 @@ h2 {
 
 
 /* inicio  seccion contacto */
-.bg-dark{
-    margin-bottom:20px;
+.bg-dark {
+    margin-bottom: 20px;
 }
+
 form {
     height: 800px;
-    width:$alturaOanchoMaximo;
+    width: $alturaOanchoMaximo;
 
 
 }
 
 .field {
-    width:$alturaOanchoMaximo;
+    width: $alturaOanchoMaximo;
     margin-right: -10px;
 }
-.form1{
-    width:100%;
+
+.form1 {
+    width: 100%;
 }
 
 .formulario1 {
@@ -525,8 +623,8 @@ form {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     /* margin-top:-50px !important; */
-    
-} 
+
+}
 
 .fab {
     font-size: 30px !important;
@@ -536,12 +634,12 @@ form {
 
 .logoC {
     font-size: 30px !important;
-     height: 400px; 
-    min-width:$alturaOanchoMaximo;
-  
-   display:flex;
-   align-items: center !important;
-   justify-content: center !important;
+    height: 400px;
+    min-width: $alturaOanchoMaximo;
+
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 .redes {
@@ -561,26 +659,59 @@ h3 {
     min-width: $alturaOanchoMaximo;
     margin: 0 !important;
     padding: 0 !important;
-    display:flex;
+    display: flex;
     align-items: center !important;
     justify-content: center !important;
 }
-.container-fluid{
+
+.container-fluid {
     padding-left: 0;
     padding-right: 0;
-    min-width:$alturaOanchoMaximo;
-    display:flex;
+    min-width: $alturaOanchoMaximo;
+    display: flex;
     align-items: center !important;
     justify-content: center !important;
 }
-.container-contacto2{
-    min-width:$alturaOanchoMaximo;
+
+.container-contacto2 {
+    min-width: $alturaOanchoMaximo;
     display: flex
-    
 }
-.container-contacto .img-fluid{
+
+.container-contacto .img-fluid {
     width: $alturaOanchoMaximo;
 }
+
+.form--form {
+    font-family: Arial;
+    font-size: 25px;
+    color: #333;
+}
+
+.form--form1 {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 25px;
+    color: #333;
+}
+
+.form--form2 {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #333;
+}
+
+.form--form3 {
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    color: #333;
+}
+
+.form--form4 {
+    font-family: 'Segoe UI';
+    font-size: 25px;
+    color: #333;
+}
+
 
 
 
@@ -588,16 +719,22 @@ h3 {
 
 /* comienzo seccion ubicacion */
 
-.container-ubicacion{
-     width: $alturaOanchoMaximo;
-     
-     iframe{
-        width:$alturaOanchoMaximo;
-        height:500px;
-        padding:40px 40px 40px 40px;
+.container-ubicacion {
+    width: $alturaOanchoMaximo;
+
+    h1 {
+        span {
+            margin-left: 10px;
+        }
     }
-    
-    
+
+    iframe {
+        width: $alturaOanchoMaximo;
+        height: 500px;
+        padding: 40px 40px 40px 40px;
+    }
+
+
 }
 
 
@@ -608,28 +745,30 @@ h3 {
 
 
 /*inicio de las pseudoclases */
-.jumbotron a:active{
-    color:rgb(255, 0, 221);
+.jumbotron a:active {
+    color: rgb(255, 0, 221);
     font-size: 20px;
-    }
-    .form2 .center-content input:active{
-        color:rgb(255, 0, 221);
-        font-size: 20px;
-        }
-        .nav-link:active{
-            font-size:15px;
-        }
-    
-    
-    
-    
-    
-    
-    /*fin de las pseudoclases */
+}
+
+.form2 .center-content input:active {
+    color: rgb(255, 0, 221);
+    font-size: 20px;
+}
+
+.nav-link:active {
+    font-size: 15px;
+}
 
 
-    
-    
 
-    
-    /* fin de la lista de estilos */
+
+
+
+/*fin de las pseudoclases */
+
+
+
+
+
+
+/* fin de la lista de estilos */
