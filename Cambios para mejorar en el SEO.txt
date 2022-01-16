@@ -1,0 +1,4 @@
+*Index.html cambie el titulo de trabajo de Bootstrap a Extensiones de pestañas pelo por pelo facial beauty,le puse 5 palabras clave para no exederme y una descripcion no tan larga para que figure por completo en la descripcion de google,cambie el h4 por h1 para respetar la jerarquia,tambien use la etiqueta strong.
+*Servicios cambie el titulo a: Servicios de belleza facial Jazilashes  para tener un titulo unico en cada seccion,le puse 5 palabras clave y una descripcion no muy larga.Modifique los h4 para respetar jerarquia
+*Solicitar cita Cambie el titulo a: Solicita una cita con nosotros y veni a conocernos,puse 5 palabras clave y puse una descripcion no muy larga.Respeta las jerarquias de encabezado
+*Ubicacion y contacto le agregue 5 palabras claves y una descripcion.Se modifico y respeto la jerarquia
