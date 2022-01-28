@@ -240,13 +240,16 @@ h5 {
 
 .navbar {
     background-color: rgb(255, 255, 255) !important;
+    font-family: 'Bebas Neue';
     height: 150px;
     min-width: $alturaOanchoMaximo;
     z-index: 10;
 }
 
-.navbar-light .navbar-toggler {
-    border-color: #fff;
+.navbar-light {
+    .navbar-toggler {
+        border-color: #fff;
+    }
 }
 
 .navbar-brand img {
@@ -261,7 +264,8 @@ h5 {
 .logo {
     height: 150px;
 }
-.nav-link{
+
+.nav-link {
     font-size: 22px;
 }
 
@@ -387,6 +391,7 @@ h2 {
 }
 
 .h4 {
+    font-family: 'Bebas Neue', cursive !important;
     background-color: rgb(187, 89, 252) !important;
     color: #fff;
     text-align: center !important;
@@ -457,6 +462,31 @@ h2 {
 
     }
 
+    .h1-jumbotron {
+        font-family: 'Bebas Neue', cursive !important;
+        margin-bottom: 0;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #fff;
+        text-align: start;
+
+
+    }
+
+    .h2-jumbotron {
+        color: #fff;
+        font-family: 'Bebas Neue', cursive !important;
+        font-size: 2.5rem;
+        text-shadow: 0 0 5px #222;
+        margin-bottom: 0.5rem;
+        text-align: start;
+        font-weight: 500;
+        line-height: 1.2;
+        padding: 0;
+        margin-bottom: 8;
+
+    }
+
     p {
         color: rgb(241, 241, 241);
         font-family: 'Pushster', cursive;
@@ -469,8 +499,9 @@ h2 {
 
 .btn-cita {
     text-align: center;
-    width: 40%;
-    font-size:20px;
+    width: 50%;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive !important;
 }
 
 .container-servicios {
@@ -493,8 +524,12 @@ h2 {
     display: flex !important;
     background-color: rgb(143, 43, 201);
     color: #fff;
-    margin: 30px;
     font-size: 50px;
+    font-family: 'Bebas Neue', cursive !important;
+    margin-top: 30px !important;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px !important;
 
 }
 
@@ -508,12 +543,22 @@ h2 {
 }
 
 .parrafo-servicios {
+    font-family: 'Bebas Neue', cursive !important;
     font-size: 22px;
     align-items: center;
     text-align: center;
     width: 50%;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.titulo-secciones {
+    color: rgb(143, 43, 201);
+}
+
+.parrafo-secciones {
+    font-family: 'Bebas Neue', cursive !important;
+    width: $alturaOanchoMaximo;
 }
 
 .section-sevicios {
@@ -555,24 +600,36 @@ h2 {
     }
 }
 
+label {
+    color: #fff;
+    font-size: 20px;
+
+
+
+
+}
+
 .center-content {
     margin-top: 10px;
 }
 
-.container-solicitar .titulo-solicitar {
-    font-family: $letra;
-    color: #000;
-    font-size: 50px;
-    font-weight: 1000 !important;
-    margin-left: 10px;
+.container-solicitar {
+    .titulo-solicitar {
+        font-family: $letra;
+        color: #000;
+        font-size: 50px;
+        font-weight: 1000 !important;
+        margin-left: 30px;
+    }
 }
 
 .subtitulo-solicitar {
-    font-family: $letra;
+    font-family: 'Bebas Neue', cursive !important;
     font-size: 35px;
     color: #000;
     font-weight: 1000 !important;
-    margin-left: 10px;
+    margin-left: -10px;
+    padding: 0;
 }
 
 .container-solcitarNuevo {
@@ -592,9 +649,17 @@ h2 {
 
 
 /* inicio  seccion contacto */
+.h1-contacto {
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+
+}
+
 .bg-dark {
     margin-bottom: 20px;
 }
+
 
 form {
     height: 800px;

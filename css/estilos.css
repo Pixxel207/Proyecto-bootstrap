@@ -246,6 +246,7 @@ h5 {
 /* inicio navbar */
 .navbar {
   background-color: white !important;
+  font-family: 'Bebas Neue';
   height: 150px;
   min-width: 100%;
   z-index: 10;
@@ -413,6 +414,7 @@ h2 {
 }
 
 .h4 {
+  font-family: 'Bebas Neue', cursive !important;
   background-color: #bb59fc !important;
   color: #fff;
   text-align: center !important;
@@ -505,6 +507,28 @@ h2 {
   text-shadow: 0 0 5px #222;
 }
 
+.jumbotron .h1-jumbotron {
+  font-family: 'Bebas Neue', cursive !important;
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fff;
+  text-align: start;
+}
+
+.jumbotron .h2-jumbotron {
+  color: #fff;
+  font-family: 'Bebas Neue', cursive !important;
+  font-size: 2.5rem;
+  text-shadow: 0 0 5px #222;
+  margin-bottom: 0.5rem;
+  text-align: start;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 0;
+  margin-bottom: 8;
+}
+
 .jumbotron p {
   color: #f1f1f1;
   font-family: 'Pushster', cursive;
@@ -514,8 +538,9 @@ h2 {
 
 .btn-cita {
   text-align: center;
-  width: 40%;
+  width: 50%;
   font-size: 20px;
+  font-family: 'Bebas Neue', cursive !important;
 }
 
 .container-servicios {
@@ -549,8 +574,12 @@ h2 {
   display: flex !important;
   background-color: #8f2bc9;
   color: #fff;
-  margin: 30px;
   font-size: 50px;
+  font-family: 'Bebas Neue', cursive !important;
+  margin-top: 30px !important;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  margin-left: 20px !important;
 }
 
 .row, .solicitar {
@@ -564,6 +593,7 @@ h2 {
 }
 
 .parrafo-servicios {
+  font-family: 'Bebas Neue', cursive !important;
   font-size: 22px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -572,6 +602,15 @@ h2 {
   width: 50%;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.titulo-secciones {
+  color: #8f2bc9;
+}
+
+.parrafo-secciones {
+  font-family: 'Bebas Neue', cursive !important;
+  width: 100%;
 }
 
 .section-sevicios {
@@ -623,6 +662,11 @@ h2 {
   margin-top: 10px;
 }
 
+label {
+  color: #fff;
+  font-size: 20px;
+}
+
 .center-content {
   margin-top: 10px;
 }
@@ -632,15 +676,16 @@ h2 {
   color: #000;
   font-size: 50px;
   font-weight: 1000 !important;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .subtitulo-solicitar {
-  font-family: "Vujahday Script", 110px;
+  font-family: 'Bebas Neue', cursive !important;
   font-size: 35px;
   color: #000;
   font-weight: 1000 !important;
-  margin-left: 10px;
+  margin-left: -10px;
+  padding: 0;
 }
 
 .container-solcitarNuevo {
@@ -651,6 +696,12 @@ h2 {
 /*FIN solicitar cita--otra seccion en la seccion sevicios */
 /* fin seccion servicios */
 /* inicio  seccion contacto */
+.h1-contacto {
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+}
+
 .bg-dark {
   margin-bottom: 20px;
 }
