@@ -86,11 +86,11 @@
                 <div class="container-solicitarNuevo col">
                     <form class="form2" action="">
 
-                        <label for="text">Horario</label>
-                        <input type="text" class="field" name="casilla1" required
+                        <label for="casilla1">Horario</label>
+                        <input type="text" id="casilla1" class="field" name="casilla1" required
                             placeholder="Horario del servicio"><br>
                         <label for="number">Fecha</label>
-                        <input type="text" required placeholder="Fecha del servicio" class="field" name="casilla2"><br>
+                        <input type="text" id="number" required placeholder="Fecha del servicio" class="field" name="casilla2"><br>
                         <select name="OS">
                             <option value="1">Lifting</option>
                             <option value="2">Pestañas pelo por pelo</option>
@@ -100,8 +100,8 @@
                         </select>
                         <!-- Botones -->
                         <label for="botones" class="center-content">
-                            <input type="submit" class="btn btn-yellow" value="Enviar">
-                            <input type="reset" class="btn btn-red" value="Borrar">
+                            <input type="submit" id="botones" class="btn btn-yellow" value="Enviar">
+                            <input type="reset" id="botones" class="btn btn-red" value="Borrar">
                         </label>
 
                     </form>
