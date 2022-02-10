@@ -217,7 +217,7 @@ h5 {
 }
 
 .letra {
-    font-family: $letra;
+    font-family:'Bebas Neue', cursive !important;
     height: $alturaOanchoMaximo;
     font-size: 20px;
     padding: 30px;
@@ -387,7 +387,8 @@ h2 {
 .text-center {
     text-align: center !important;
     font-family: 'Bebas Neue', cursive !important;
-    font-size: 60px;
+    background-color:#444;
+    font-size: 50px;
     margin: 0px;
 
 }
@@ -553,9 +554,15 @@ h2 {
     padding-left: 5%;
     padding-right: 5%;
 }
-
+.text-area{
+    width:100%
+}
 .titulo-secciones {
     color: rgb(143, 43, 201);
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 2.5rem;
+    padding:0;
+    text-align: initial;
 }
 
 .parrafo-secciones {
@@ -669,13 +676,19 @@ form {
     width: $alturaOanchoMaximo;
     padding-left: 1%;
     padding-right: 1%;
+    padding:20px 20px 20px 20px;
 
 
+}
+input{
+    border: 1px solid #333;
 }
 
 .field {
     width: $alturaOanchoMaximo;
     margin-right: -10px;
+    width: $width;
+    border: 1px solid #333;
 }
 
 .form1 {
@@ -741,7 +754,9 @@ h3 {
     align-items: center !important;
     justify-content: center !important;
 }
-
+.container-contacto{
+    height:100%;
+}
 .container-contacto2 {
     min-width: $alturaOanchoMaximo;
     display: flex

@@ -216,7 +216,7 @@ h5 {
 }
 
 .letra {
-  font-family: "Vujahday Script", 110px;
+  font-family: 'Bebas Neue', cursive !important;
   height: 100%;
   font-size: 20px;
   padding: 30px;
@@ -411,7 +411,8 @@ h2 {
 .text-center {
   text-align: center !important;
   font-family: 'Bebas Neue', cursive !important;
-  font-size: 60px;
+  background-color: #444;
+  font-size: 50px;
   margin: 0px;
 }
 
@@ -606,8 +607,16 @@ h2 {
   padding-right: 5%;
 }
 
+.text-area {
+  width: 100%;
+}
+
 .titulo-secciones {
   color: #8f2bc9;
+  font-family: 'Bebas Neue', cursive !important;
+  font-size: 2.5rem;
+  padding: 0;
+  text-align: initial;
 }
 
 .parrafo-secciones {
@@ -714,11 +723,18 @@ form {
   width: 100%;
   padding-left: 1%;
   padding-right: 1%;
+  padding: 20px 20px 20px 20px;
+}
+
+input {
+  border: 1px solid #333;
 }
 
 .field {
   width: 100%;
   margin-right: -10px;
+  width: 100%;
+  border: 1px solid #333;
 }
 
 .form1 {
@@ -804,6 +820,10 @@ h3 {
   -webkit-box-pack: center !important;
       -ms-flex-pack: center !important;
           justify-content: center !important;
+}
+
+.container-contacto {
+  height: 100%;
 }
 
 .container-contacto2 {
